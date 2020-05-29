@@ -2,5 +2,6 @@ import { serve } from "https://deno.land/std@0.53.0/http/server.ts";
 const s = serve({ port: 8000 });
 console.log("http://localhost:8000/");
 for await (const req of s) {
-  req.respond({ body: "Hello World\n" });
+  import { yolo } from "https://github.com/fizx/denotest/blob/master/dynamically.ts"
+  req.respond({ body: yolo() });
 }
